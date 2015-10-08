@@ -1,0 +1,6 @@
+<h2>Edit tenant</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: tenant_path(@conn, :update, @tenant) %>
+
+<%= link "Back", to: tenant_path(@conn, :index) %>

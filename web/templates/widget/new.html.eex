@@ -1,0 +1,6 @@
+<h2>New widget</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: tenant_widget_path(@conn, :create, @tenant_id) %>
+
+<%= link "Back", to: tenant_widget_path(@conn, :index, @tenant_id) %>

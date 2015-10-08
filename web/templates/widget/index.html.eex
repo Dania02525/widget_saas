@@ -1,0 +1,26 @@
+<h2>Listing widgets</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for widget <- @widgets do %>
+    <tr>
+      <td><%= widget.name %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: tenant_widget_path(@conn, :show, @tenant_id, widget), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: tenant_widget_path(@conn, :edit, @tenant_id, widget), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: tenant_widget_path(@conn, :delete, @tenant_id, widget), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New widget", to: tenant_widget_path(@conn, :new, @tenant_id) %>

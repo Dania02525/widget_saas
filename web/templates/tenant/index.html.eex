@@ -1,0 +1,26 @@
+<h2>Listing tenants</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tenant <- @tenants do %>
+    <tr>
+      <td><%= tenant.name %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: tenant_path(@conn, :show, tenant), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: tenant_path(@conn, :edit, tenant), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: tenant_path(@conn, :delete, tenant), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New tenant", to: tenant_path(@conn, :new) %>

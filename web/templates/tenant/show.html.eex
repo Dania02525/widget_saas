@@ -1,0 +1,13 @@
+<h2>Show tenant</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @tenant.name %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tenant_path(@conn, :edit, @tenant) %>
+<%= link "Back", to: tenant_path(@conn, :index) %>

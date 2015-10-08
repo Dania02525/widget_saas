@@ -1,0 +1,13 @@
+<h2>Show widget</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @widget.name %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tenant_widget_path(@conn, :edit, @tenant_id, @widget) %>
+<%= link "Back", to: tenant_widget_path(@conn, :index, @tenant_id) %>
