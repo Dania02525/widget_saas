@@ -1,11 +1,11 @@
 # WidgetSaas
-### Demostration of the Apartmentex SaaS library
+### Demonstration of the Apartmentex SaaS library
 
-This is probably the smallest, simplest SaaS architecture app ever.  
+This is probably the smallest, simplest SaaS-architecture app ever.  
 
 To start your TenantSaaS app:
 
-  1. Add apartmentex dependency as in apartmentex readme
+  1. Add apartmentex dependency as instructed in apartmentex readme
   2. Fetch and compile dependencies with  mix deps.get && mix deps.compile
   2. Create and migrate your main/public database with `mix ecto.create && mix ecto.migrate` - this 
   gives you your tenants table in the main schema/database
