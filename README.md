@@ -12,7 +12,8 @@ To start your TenantSaaS app:
   3. Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit [`localhost:4000/tenants`](http://localhost:4000/tenants) from your browser. Adding a tenant will cause a schema
-or database to be created for the new tenant, and the widget table migrated.  
+or database to be created for the new tenant, and the widget_types and widgets tables migrated.  Both widgets and widget types have indexes
+on 'name', and in widgets, 'widget_type_id' references the widget_types table.   
 
 After creating your first tenant, visiting [`localhost:4000/tenants/1/widgets`] will allow you to view, add, 
 and delete the widgets in tenant one's schema or database.

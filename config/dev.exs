@@ -39,4 +39,5 @@ config :widget_saas, WidgetSaas.Repo,
   password: "postgres",
   database: "widget_saas_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  log_level: :debug
