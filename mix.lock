@@ -1,4 +1,4 @@
-%{"apartmentex": {:git, "https://github.com/Dania02525/apartmentex.git", "4843faf4e5c53ad8647eb8085637e2a8318552f1", []},
+%{"apartmentex": {:git, "https://github.com/Dania02525/apartmentex.git", "81564366fb364599bf3f3bf873640310f1152a70", []},
   "cowboy": {:hex, :cowboy, "1.0.3"},
   "cowlib": {:hex, :cowlib, "1.0.1"},
   "decimal": {:hex, :decimal, "1.1.0"},
