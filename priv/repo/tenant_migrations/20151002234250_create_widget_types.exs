@@ -1,5 +1,5 @@
 defmodule WidgetSaas.Repo.Migrations.CreateWidgetTypes do
-  use Apartmentex.Migration
+  use Ecto.Migration
 
   def change do
     create table(:widget_types) do
