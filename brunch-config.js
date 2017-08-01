@@ -40,7 +40,7 @@ exports.config = {
     // Dependencies and current project directories to watch
     watched: [
       "deps/phoenix/web/static",
-      "deps/phoenix_html/web/static",
+      "deps/phoenix_html/priv/static",
       "web/static",
       "test/static"
     ],
