@@ -3,6 +3,8 @@
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
 </div>
 
+
+
 <div class="row marketing">
   <div class="col-lg-6">
     <h4>Resources</h4>
@@ -15,6 +17,9 @@
       </li>
       <li>
         <a href="https://github.com/phoenixframework/phoenix">Source</a>
+      </li>
+      <li>
+        <%= link "Tenants", to: tenant_path(@conn, :index) %>
       </li>
     </ul>
   </div>
